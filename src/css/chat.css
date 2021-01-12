@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(41, 41, 41);
+}
+.body-chat{
+
+    background-color: rgba(29, 28, 28, 0.678);
+    border-radius: 4px;
+    margin: 100px;
+}
+.body-chat ul{
+    list-style: none;
+}
+.header-chat{
+    text-align: left;
+    background-color: white;
+}
+.header-chat img{
+    width: 64px;
+    height: 64px;
+    margin: 20px;
+    display: inline-block;
+}
+.header-chat h1{
+    display: inline;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(54, 52, 52);
+}
+.box-chat{
+    background-color: rgb(104, 58, 58);
+    border-radius: 5px;
+    padding: 15px;
+    width: max-content;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.6s ease;
+}
+.box-chat h4{
+    font-size: 15px;
+    color:white;
+}
+.box-chat p{
+    font-size: 13px;
+    color: grey;
+}
+.in-chat{
+    margin: 10px;
+    overflow-y: auto;
+    max-height: 50vh;
+    scroll-behavior: smooth;
+}
+.in-chat ul li > p{
+    display: inline-block;
+    margin-left: 5px;
+    color: rgb(102, 101, 101);
+}
+.send-chat input{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    border-color: transparent !important;
+    transition: all 0.6s ease;
+}
+.send-chat input:focus{
+    border: none;
+    outline: none;
+}
+.send-chat input:hover{
+    background-color: rgb(173, 170, 170);
+    color: black;
+}
+.send-chat button ion-icon:hover{
+    color: black;
+}
+.send-chat button:hover{
+    background-color: white;
+}
+.send-chat button{
+    padding: 15px;
+    position: fixed;
+    right: 260px;
+    border: none;
+    background: none;
+    transition: all 0.6s ease;
+    border-radius: 120%;
+}
+.send-chat button ion-icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px){
+    .body-chat{
+        margin: 0px;
+        margin-top: 40px;
+    }
+    .send-chat button{
+        right: 10px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 1200px){
+    .body-chat{
+        margin: 0px;
+        margin-top: 40px;
+    }
+    .send-chat button{
+        right: 60px;
+    }
+}
